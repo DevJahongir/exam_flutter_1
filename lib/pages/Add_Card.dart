@@ -8,6 +8,7 @@ class AddCard extends StatefulWidget {
 }
 
 class _AddCardState extends State<AddCard> {
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -40,8 +41,12 @@ class _AddCardState extends State<AddCard> {
 
 
               TextFormField(
-                decoration: InputDecoration(),
+                decoration: InputDecoration(
+                  hintText: '5272892091839232',
+                  hintStyle: TextStyle(fontSize: 20, )
+                ),
                 keyboardType: TextInputType.number,
+
               ),
 
 
@@ -50,6 +55,8 @@ class _AddCardState extends State<AddCard> {
 
               TextFormField(
                 decoration: InputDecoration(
+                  hintText: '11/26',
+                  hintStyle: TextStyle(fontSize: 20)
                 ),
                 keyboardType: TextInputType.datetime,
               ),

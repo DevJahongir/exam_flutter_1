@@ -36,6 +36,7 @@ class _CardListState extends State<CardList> {
         children: [
           Expanded(
             child: ListView.builder(
+              padding: EdgeInsets.all(10),
                 itemCount: cards.length,
                 itemBuilder: (context, index) {
                   return Card(
